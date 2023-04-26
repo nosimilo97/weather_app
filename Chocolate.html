@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Chocolate</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid white;
+        padding: 20px;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Cerebri Sans", Helvetica, Arial, sans-serif;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+
+        border-radius: 4px;
+      }
+      p {
+        text-align: center;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+      button {
+        display: block;
+        margin: 30px auto;
+        padding: 10px 20px;
+        font-size: 40px;
+        opacity: 1;
+        transition: opacity 200ms ease-in-out;
+
+        border-radius: 4px;
+        background: black;
+        box-shadow: 0px 1px 20px, rgba(0, 0, 0, 0.5);
+        color: beige;
+        text-transform: uppercase;
+      }
+      a {
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        color: black;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 600px;
+        background: burlywood;
+        border-radius: 10px;
+      }
+      .details {
+        text-align: center;
+        font-weight: lighter;
+        font-size: 18px;
+        font-family: monospace;
+        opacity: 0.7;
+      }
+      button:hover {
+        cursor: pointer;
+        background: white;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I love Chocolate</h1>
+
+      <h2>Especially dark Chocolate</h2>
+      <hr />
+      <img
+        src="https://www.parents.com/thmb/PWn7MgS4koO6osfBZZ5MJvy93IU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Parents-GettyImages-829253402-b0b6aeecff3d44e39a1d6e8ad1d7ba90.jpg "
+        alt=" Dark Chocolate"
+        width=" 400px"
+      />
+      <hr />
+      <p>
+        <strong>Dark chocolate</strong> is a form of chocolate containing cocoa
+        solids and cocoa butter without the milk or butter found in milk
+        chocolate. Dark chocolate without added sweetener is known as bitter
+        chocolate or unsweetened chocolate.As for the other two main types of
+        chocolate (milk and white), dark chocolate is used for chocolate bars or
+        as a coating in confectionery. Government and industry standards of what
+        products may be labeled <em>"dark chocolate"</em> vary by country and
+        market. There is no high-quality evidence for any health effects of dark
+        chocolate, such as on blood pressure.
+      </p>
+      <a
+        class="hover"
+        href=" https://en.wikipedia.org/wiki/Dark_chocolate"
+        target="_blank"
+      >
+        Read on wikipedia
+      </a>
+      <br />
+      <button class="hover">Try dark chocolate</button>
+      <p class="details">Coded by Nosimilo Mtshali</p>
+    </div>
+    <script>
+      function ContactUs() {
+        let name = prompt("what is your name?");
+        let favourate = prompt("what is your favourate chocolate?");
+        if (favourate === "Dark" || favourate === " Dark Chocolate") {
+          alert(
+            "welcome" +
+              " " +
+              name +
+              "," +
+              " " +
+              "we happy that you like" +
+              " " +
+              favourate +
+              " " +
+              "Chocolate" +
+              " " +
+              "meanwhile," +
+              " " +
+              " enjoy alot of Dark Chocolate!"
+          );
+        } else {
+          alert(
+            "Welcome" +
+              " " +
+              name +
+              "," +
+              " " +
+              "We sad that you don't like Dark Chocolate."
+          );
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", ContactUs);
+    </script>
+  </body>
+</html>
